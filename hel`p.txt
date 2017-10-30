@@ -1,0 +1,61 @@
+# -*- coding: utf-8 -*-
+
+evens_to_50 = [i for i in range(51) if i % 2 == 0]
+print evens_to_50
+
+-----------------------------------------------------
+def nickname(nombre_usuario):
+
+        long=len(nombre_usuario) #Calcular la longitud del nomre de usuario
+        y=nombre_usuario.isalnum() #Calcula que la cadena contenga valores alfanuméricos
+        
+        if y== False: # La cadena contiene valores no alfanuméricos
+            print("El nombre de usuario puede contener solo letras y números")
+            
+        if long < 6: 
+            print("El nombre de usuario debe contener al menos 6 caracteres")
+            
+        if long > 12: 
+            print("El nombre de usuario no puede contener más de 12 caracteres")
+            
+        if long >5 and long <13 and y ==True:
+            return True #Verdadero si el tamaño es mayor a 5 y menor a 13
+
+
+        
+        for carac in password: #ciclo for que recorre caracter por caracter en la contraseña
+º	  if carac.isupper()== True: #saber si hay mayuscula
+                mayuscula=True #acumulador o contador de mayusculas
+                
+            if carac.islower()== True: #saber si hay minúsculas
+                minuscula=True #acumulador o contador de minúsculas
+                
+            if carac.isdigit()== True: #saber si hay números
+                numeros=True #acumulador o contador de numeros
+                            
+
+                       
+        if long <6 and validar==True:
+            print("Mínimo 8 caracteres")
+            validar=False #cambia a Flase si no se cumple el requisito móinimo de caracteres
+	if long >12 and validar==True:
+            print("Máximo 12 caracteres")
+            validar=False #cambia a Flase si no se cumple el requisito móinimo de caracteres
+
+       
+
+------------------------------------------------------------------------------
+
+lista = [atributos]
+print sorted(lista)
+
+-------------------------------------------------------------------------------
+divisible = [i for i in range (a and b) if i %7 == 0 and i % 5 !=0]
+print divisible
+
+
+--------------------------------------------------------------------------------
+
+cadena=input('Escribe una frase: ')
+x=cadena.split()#Convierte la cadena en lista
+ 
