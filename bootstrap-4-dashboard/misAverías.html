@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<meta name="description" content="">
+	
+	<meta name="author" content="">
+	
+	<link rel="icon" href="images/favicon.ico">
+	
+	<title>Medialoot Bootstrap 4 Dashboard Template</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+	<!-- Icons -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid" id="wrapper">
+		<div class="row">
+			<nav class="sidebar col-xs-12 col-sm-4 col-lg-3 col-xl-2 bg-faded sidebar-style-1">
+				<h1 class="site-title"><a href="index.html"><em class="fa fa-rocket"></em> ~Menú~ </a></h1>
+				
+				<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
+				
+				<ul class="nav nav-pills flex-column sidebar-nav">
+					<li class="nav-item"><a class="nav-link" href="index.html"><em class="fa fa-dashboard"></em> Menú de Inicio <span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a class="nav-link active" href="misAverías.html"><em class="fa fa-calendar-o"></em> Mis averías</a></li>
+					<li class="nav-item"><a class="nav-link" href="nuevaAveria.html"><em class="fa fa-clone"></em> Nueva avería</a></li>
+				</ul>
+				
+				<a href="#" class="logout-button"><em class="fa fa-power-off"></em>Cerrar Sesión</a></nav>
+
+				<main class="col-xs-12 col-sm-8 offset-sm-4 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 pt-3 pl-4">
+					<header class="page-header row justify-center">
+						<div class="col-md-6 col-lg-8" >
+							<h1 class="float-left text-center text-md-left">MIS AVERÍAS</h1>
+						</div>
+
+						<div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="images/profile-pic.jpg" alt="profile photo" class="circle float-left profile-photo" width="50" height="auto">
+
+							<div class="username mt-1">
+								<h4 class="mb-1">Nombre de usuario</h4>
+
+								<h6 class="text-muted">Nombre</h6>
+							</div>
+						</a>
+						
+						<div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#"><em class="fa fa-user-circle mr-1"></em> Mi perfil</a>
+							<a class="dropdown-item" href="#"><em class="fa fa-sliders mr-1"></em> Privacidad</a>
+							<a class="dropdown-item" href="#"><em class="fa fa-power-off mr-1"></em> Cerrar sesión</a></div>
+						</div>
+
+						<div class="clear"></div>
+					</header>
+
+					<section class="row">
+						<div class="col-sm-12">
+						<div class="alert bg-primary" role="alert"><em class="fa fa-comment mr-2"></em> ¡Tiene una nueva revisión o avería completada! <a href="#" class="float-right"><em class="fa fa-remove"></em></a></div>
+							<section class="row">
+								<div class="col-md-12 col-lg-12">
+									<div class="card mb-4">
+										<div class="card-block">
+											<h3 class="card-title">Mis averías</h3>
+
+											<div class="dropdown card-title-btn-container">
+												<button class="btn btn-sm btn-subtle" type="button"><em class="fa fa-list-ul"></em> ver todas</button>
+
+												<button class="btn btn-sm btn-subtle dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><em class="fa fa-cog"></em></button>
+
+												<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#"><em class="fa fa-search mr-1"></em> Ver detalles</a>
+													<a class="dropdown-item" href="#"><em class="fa fa-thumb-tack mr-1"></em> Archivar una</a>
+												</div>
+											</div>
+
+											<div class="table-responsive">
+												<table class="table table-striped">
+													<thead>
+														<tr>
+															<th>ID Avería #</th>
+
+															<th>Avería</th>
+
+															<th>Mecánico</th>
+
+															<th>Estado</th>
+														</tr>
+													</thead>
+
+													<tbody>
+														<tr>
+															<td>0001</td>
+
+															<td>Name 1</td>
+
+															<td>Mecánico 1</td>
+
+															<td><a href="detallesAverias.html">Completada</a></td>
+														</tr>
+
+														<tr>
+															<td>0002</td>
+
+															<td>Name 2</td>
+
+															<td>Mecánico 2</td>
+
+															<td><a href="detallesAverias.html">Completada</a></td>
+														</tr>
+
+														<tr>
+															<td>0003</td>
+
+															<td>Name 3</td>
+
+															<td>Mecánico 3</td>
+
+															<td><a href="detallesAverias.html">En proceso</a></td>
+														</tr>
+
+														<tr>
+															<td>0004</td>
+
+															<td>Name 4</td>
+
+															<td>Mecánico 4</td>
+
+															<td><a href="detallesAverias.html">Pendiente</a></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    
+    <script src="js/chart.min.js"></script>
+    <script src="js/chart-data.js"></script>
+    <script src="js/easypiechart.js"></script>
+    <script src="js/easypiechart-data.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+    	window.onload = function () {
+    		var chart1 = document.getElementById("line-chart").getContext("2d");
+    		window.myLine = new Chart(chart1).Line(lineChartData, {
+    			responsive: true,
+    			scaleLineColor: "rgba(0,0,0,.2)",
+    			scaleGridLineColor: "rgba(0,0,0,.05)",
+    			scaleFontColor: "#c5c7cc"
+    		});
+    	};
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    
+</body>
+</html>

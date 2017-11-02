@@ -1,0 +1,142 @@
+		<!DOCTYPE html>
+		<html lang="es">
+		<head>
+			<meta charset="utf-8">
+			
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+			
+			<meta name="description" content="">
+			
+			<meta name="author" content="">
+			
+			<link rel="icon" href="images/favicon.ico">
+			
+			<title>Medialoot Bootstrap 4 Dashboard Template</title>
+
+			<!-- Bootstrap core CSS -->
+			<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+			<!--Fonts-->
+			<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+			<!-- Icons -->
+			<link href="css/font-awesome.css" rel="stylesheet">
+
+			<!-- Custom styles for this template -->
+			<link href="css/style.css" rel="stylesheet">
+		</head>
+		<body>
+			<div class="container-fluid" id="wrapper">
+				<div class="row">
+					<nav class="sidebar col-xs-12 col-sm-4 col-lg-3 col-xl-2 bg-faded sidebar-style-1">
+						<h1 class="site-title"><a href="index.html"><em class="fa fa-rocket"></em> ~Menú~ </a></h1>
+						
+						<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
+						
+						<ul class="nav nav-pills flex-column sidebar-nav">
+							<li class="nav-item"><a class="nav-link" href="index.html"><em class="fa fa-dashboard"></em> Menú de Inicio <span class="sr-only">(current)</span></a></li>
+							<li class="nav-item"><a class="nav-link active" href="misAverías.html"><em class="fa fa-calendar-o"></em> Mis averías</a></li>
+							<li class="nav-item"><a class="nav-link" href="nuevaAveria.html"><em class="fa fa-clone"></em> Nueva avería</a></li>
+						</ul>
+						
+						<a href="#" class="logout-button"><em class="fa fa-power-off"></em>Cerrar Sesión</a></nav>
+
+						<main class="col-xs-12 col-sm-8 offset-sm-4 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 pt-3 pl-4">
+							<header class="page-header row justify-center">
+								<div class="col-md-6 col-lg-8" >
+									<h1 class="float-left text-center text-md-left">Detalles</h1>
+								</div>
+
+								<div class="dropdown user-dropdown col-md-6 col-lg-4 text-center text-md-right"><a class="btn btn-stripped dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="images/profile-pic.jpg" alt="profile photo" class="circle float-left profile-photo" width="50" height="auto">
+
+									<div class="username mt-1">
+										<h4 class="mb-1">Nombre de usuario</h4>
+
+										<h6 class="text-muted">Nombre</h6>
+									</div>
+								</a>
+								
+								<div class="dropdown-menu dropdown-menu-right" style="margin-right: 1.5rem;" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="#"><em class="fa fa-user-circle mr-1"></em> Mi perfil</a>
+									<a class="dropdown-item" href="#"><em class="fa fa-sliders mr-1"></em> Privacidad</a>
+									<a class="dropdown-item" href="#"><em class="fa fa-power-off mr-1"></em> Cerrar sesión</a></div>
+								</div>
+
+								<div class="clear"></div>
+							</header>
+
+							<section class="row">
+								<div class="col-sm-12">
+								<div class="alert bg-primary" role="alert"><em class="fa fa-comment mr-2"></em> ¡Tiene una nueva revisión o avería completada! <a href="#" class="float-right"><em class="fa fa-remove"></em></a></div>
+									<div class="card-block">
+										<div class="user-progress justify-center">
+											<div class="col-sm-3 col-md-2 col-xl-1" style="padding: 0;">
+												<img src="images/profile-pic.jpg" alt="profile photo" class="circle profile-photo" style="width: 100%; max-width: 100px;">
+
+											</div>
+
+											<div class="col-sm-6 col-md-8 col-xl-10">
+												<h3 class="pt-1">Mecánico encargado</h3>
+											</div>
+
+										</div>
+										<div class="col-lg-9 mb-3" style="margin-top: 5%;">
+											<div class="card">
+												<div class="card-header">Detalles de la avería</div>
+
+												<div class="card-block">
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+														ut ante in sapien blandit luctus sed ut lacus. Phasellus urna est, faucibus
+														nec ultrices placerat, feugiat et ligula. Donec vestibulum magna a dui
+														pharetra molestie. Fusce et dui urna.</p>
+
+														<div class="card-block" style="display: block; float: left;">
+															<div class="easypiechart" id="easypiechart-3" data-percent="75" ></div>
+
+															<h5 class="mt-2 mb-1">Porcentaje Realizado</h5>
+
+															<p class="mb-1">75%</p>
+														</div>
+													</div>
+												</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+	</main>
+</div>
+</div>
+
+		    <!-- Bootstrap core JavaScript
+		    ================================================== -->
+		    <!-- Placed at the end of the document so the pages load faster -->
+		    <script src="js/jquery-3.2.1.min.js"></script>
+		    <script src="dist/js/bootstrap.min.js"></script>
+		    
+		    <script src="js/chart.min.js"></script>
+		    <script src="js/chart-data.js"></script>
+		    <script src="js/easypiechart.js"></script>
+		    <script src="js/easypiechart-data.js"></script>
+		    <script src="js/bootstrap-datepicker.js"></script>
+		    <script src="js/custom.js"></script>
+		    <script>
+		    	window.onload = function () {
+		    		var chart1 = document.getElementById("line-chart").getContext("2d");
+		    		window.myLine = new Chart(chart1).Line(lineChartData, {
+		    			responsive: true,
+		    			scaleLineColor: "rgba(0,0,0,.2)",
+		    			scaleGridLineColor: "rgba(0,0,0,.05)",
+		    			scaleFontColor: "#c5c7cc"
+		    		});
+		    	};
+		    </script>
+		    
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		    
+		</body>
+		</html>
